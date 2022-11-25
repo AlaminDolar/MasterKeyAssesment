@@ -10,10 +10,10 @@ const SingleCart = (props) => {
           <img className="" src={picture} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <p>{price}</p>
-          <div className="card-actions justify-end">
-            <p>{discount}</p>
+          <h2 className="card-title text-start">{name}</h2>
+          <p className="text-start">${price}</p>
+          <div className="card-actions text-end">
+            <p className="text-warning">-{discount}% off</p>
           </div>
         </div>
       </div>
